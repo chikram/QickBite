@@ -1,0 +1,6 @@
+.nav-link:hover {
+  border-bottom: 3px solid red;
+}
+.btn:hover {
+  background-color: #fff4f2;
+}
