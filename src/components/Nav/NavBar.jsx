@@ -71,7 +71,6 @@ const NavBar = () => {
                 size="lg"
                 className="p-2"
               />
-
               <div
                 className="text-center fs-6 position-absolute mx-2 my-1 top-0 start-50 translate-middle bg-danger text-white rounded-circle"
                 style={{ width: "10px", height: "10px", lineHeight: "20px" }}

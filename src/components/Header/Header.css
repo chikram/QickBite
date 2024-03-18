@@ -1,0 +1,34 @@
+h1 {
+  font-size: 40px;
+  padding-left: 15%;
+}
+.paragraph {
+  padding-left: 15%;
+  font-size: 15px;
+}
+.view-menu {
+  padding-left: 15%;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .paragraph {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 575px) {
+  h1 {
+    font-size: 8px;
+    display: flex !important;
+  }
+}
+@media (min-width: 322px) and (max-width: 575px) {
+  .paragraph {
+    font-size: 9px;
+  }
+}
