@@ -1,0 +1,11 @@
+.menu-list {
+  overflow-x: scroll;
+}
+
+.menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-item-list {
+  cursor: pointer;
+}

@@ -11,7 +11,7 @@ const Header = () => {
         className="img-fluid"
       />
       <div className="translate-middle-y position-absolute top-50 start-30 text-white">
-        <h1 className="fw-bold ">
+        <h1 className="fw-bold  fav-food">
           Order Your <br className=" d-none d-sm-block " /> Favourite Food here
         </h1>
         <p className="paragraph ">

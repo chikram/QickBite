@@ -1,4 +1,4 @@
-h1 {
+.fav-food {
   font-size: 40px;
   padding-left: 15%;
 }
@@ -10,7 +10,7 @@ h1 {
   padding-left: 15%;
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  h1 {
+  .fav-food {
     font-size: 25px;
   }
 }
@@ -22,7 +22,7 @@ h1 {
 }
 
 @media (min-width: 322px) and (max-width: 575px) {
-  h1 {
+  .fav-food {
     font-size: 10px;
     display: flex !important;
     padding-top: 3%;
