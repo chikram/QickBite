@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavBar = () => {
   const [menu, setMenu] = useState("home");
   return (
-    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand fs-3 fw-bold text-danger" href="#">
           QuickBite

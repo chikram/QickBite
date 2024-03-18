@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid my-5">
       <BrowserRouter>
         <NavBar />
         <Routes>
