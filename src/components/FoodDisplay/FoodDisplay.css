@@ -1,0 +1,15 @@
+@media (min-width: 403px) and (max-width: 767px) {
+  .center {
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 322px) and (max-width: 440px) {
+  .row .col-8 {
+    justify-content: center;
+  }
+  .row .col-8 {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
