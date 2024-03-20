@@ -48,7 +48,12 @@ const Fooditem = ({ id, name, price, description, image }) => {
             onClick={() => removeFromCart(id)}
             className="px-2"
           />
-          <p className="px-1 my-auto text-dark fw-bold">{cartItems[id]}</p>
+          <p
+            style={{ fontSize: "13px" }}
+            className="px-1 my-auto text-dark fw-bold"
+          >
+            {cartItems[id]}
+          </p>
           <img
             width={45}
             src={assets.add_icon_green}

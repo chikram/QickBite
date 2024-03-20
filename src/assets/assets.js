@@ -246,7 +246,7 @@ export const food_list = [
         category: "Cake"
     }, {
         _id: "19",
-        name: "Butterscotch Cake",
+        name: "Butter Cake",
         image: food_19,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",

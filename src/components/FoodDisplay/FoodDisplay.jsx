@@ -9,18 +9,20 @@ const FoodDisplay = ({ category }) => {
       <h2>Top Dishes near You</h2>
       <div className="row py-3 center">
         {food_list.map((item, index) => {
-          return (
-            <div className="py-3 col-8 col-sm-6 col-md-6 col-xl-3 col-lg-4 ">
-              <Fooditem
-                key={index}
-                id={item._id}
-                name={item.name}
-                description={item.description}
-                price={item.price}
-                image={item.image}
-              />
-            </div>
-          );
+          if (category === "All" || category === item.category) {
+            return (
+              <div className="py-3 col-8 col-sm-6 col-md-6 col-xl-3 col-lg-4 ">
+                <Fooditem
+                  key={index}
+                  id={item._id}
+                  name={item.name}
+                  description={item.description}
+                  price={item.price}
+                  image={item.image}
+                />
+              </div>
+            );
+          }
         })}
       </div>
     </div>
