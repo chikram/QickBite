@@ -14,3 +14,6 @@
 .card-img-top:hover {
   opacity: 0.9;
 }
+.card-img-top {
+  border-radius: 10px;
+}
