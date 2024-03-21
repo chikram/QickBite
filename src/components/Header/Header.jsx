@@ -19,7 +19,7 @@ const Header = () => {
           specialties.
         </p>
         <div className="view-menu">
-          <button type="button" className="btn-primary ">
+          <button type="button" className="btn-primary border">
             View Menu
           </button>
         </div>

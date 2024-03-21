@@ -3,7 +3,7 @@ import { menu_list } from "../../assets/assets";
 import "./Explore.css";
 const ExploreMenu = ({ category, setCategory }) => {
   return (
-    <div className="container-fluid my-3">
+    <div className="container-fluid my-3" id="menu">
       <h1>Explore Menu</h1>
       <p>Chose Your Favourite Food item from the give list</p>
       <div className="d-flex menu-list">

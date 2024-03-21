@@ -1,5 +1,6 @@
 import "./NavBar.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   faCartShopping,
@@ -32,19 +33,19 @@ const NavBar = () => {
               onClick={() => setMenu("home")}
               className={menu === "home" ? "active" : ""}
             >
-              <a
+              <Link
                 className="nav-link fw-bold text-dark"
                 aria-current="page"
-                href="#"
+                to="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li
               onClick={() => setMenu("Menu")}
               className={menu === "Menu" ? "active" : ""}
             >
-              <a className="nav-link fw-bold text-dark" href="#">
+              <a className="nav-link fw-bold text-dark" href="#menu">
                 Menu
               </a>
             </li>
@@ -54,7 +55,7 @@ const NavBar = () => {
               }}
               className={menu === "contact-us" ? "active" : ""}
             >
-              <a className="nav-link fw-bold text-dark" href="#">
+              <a className="nav-link fw-bold text-dark" href="#footer">
                 Contact us
               </a>
             </li>
