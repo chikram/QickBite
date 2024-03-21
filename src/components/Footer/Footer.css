@@ -1,0 +1,4 @@
+.list-unstyled li {
+  padding-left: 0; /* Reset padding */
+  margin-left: 0; /* Reset margin */
+}
