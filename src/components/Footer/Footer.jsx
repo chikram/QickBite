@@ -3,7 +3,7 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedinIn,
-  faFacebookF,
+  faFacebook,
   faXTwitter,
   faInstagram,
   faGoogle,
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
 
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h4 className="fw-bold text-white">COMPANY</h4>
+                <h5 className="fw-bold text-white">COMPANY</h5>
 
                 <ul className="list-unstyled">
                   <li>
@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
 
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h4 className="fw-bold text-white ">GET IN TOUCH</h4>
+                <h5 className="fw-bold text-white ">GET IN TOUCH</h5>
 
                 <ul className="list-unstyled mb-0">
                   <li>
@@ -75,22 +75,47 @@ const Footer = () => {
               </div>
             </div>
           </section>
-          <section className="mb-4 d-flex flex-row icon">
-            <a className="btn  m-1 border-white" href="#!" role="button">
+          <section className="mb-4 d-flex flex-wrap justify-content-center justify-content-md-center icon mx-3">
+            <a
+              className="btn m-1 border-2 border-danger"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "60%" }}
+            >
               <FontAwesomeIcon icon={faXTwitter} style={{ color: "gray" }} />
             </a>
 
-            <a className="btn  m-1  border-white" href="#!" role="button">
+            <a
+              className="btn m-1 border-2 border-danger"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "60%" }}
+            >
               <FontAwesomeIcon icon={faGoogle} style={{ color: "red" }} />
             </a>
 
-            <a className="btn  m-1  border-white" href="#!" role="button">
+            <a
+              className="btn m-1 border-2 border-danger"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "60%" }}
+            >
               <FontAwesomeIcon icon={faInstagram} style={{ color: "red" }} />
             </a>
-            <a className="btn m-1  border-white " href="#!" role="button">
-              <FontAwesomeIcon icon={faFacebookF} style={{ color: "blue" }} />
+            <a
+              className="btn m-1 border-2 border-danger"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "60%" }}
+            >
+              <FontAwesomeIcon icon={faFacebook} style={{ color: "#3124e5" }} />
             </a>
-            <a className="btn m-1 border-white" href="#!" role="button">
+            <a
+              className="btn m-1 border-2 border-danger"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "60%" }}
+            >
               <FontAwesomeIcon icon={faLinkedinIn} style={{ color: "blue" }} />
             </a>
           </section>
@@ -98,7 +123,7 @@ const Footer = () => {
 
         <div
           className="text-center p-3 text-white"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "black" }}
         >
           © 2022 Copyright
           <span className="text-danger fw-bold fs-5 px-2">QuickBite</span>

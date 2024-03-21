@@ -1,6 +1,7 @@
 @media (min-width: 403px) and (max-width: 767px) {
   .center {
     justify-content: center !important;
+    padding-left: 3% !important;
   }
 }
 @media only screen and (min-width: 322px) and (max-width: 440px) {
