@@ -1,0 +1,19 @@
+@media only screen and (min-width: 322px) and (max-width: 576px) {
+  .table {
+    margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 556px) and (max-width: 768px) {
+  .table {
+    margin-top: 10%;
+  }
+}
+.remove {
+  cursor: pointer;
+  font-weight: bold;
+}
+@media only screen and (min-width: 300px) and (max-width: 556px) {
+  .btn-total {
+    font-size: 10px;
+  }
+}

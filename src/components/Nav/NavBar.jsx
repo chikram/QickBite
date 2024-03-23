@@ -13,9 +13,9 @@ const NavBar = ({ setShowLogin }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light  fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand fs-3 fw-bold text-danger" href="#">
+        <Link className="navbar-brand fs-3 fw-bold text-danger" to="/">
           QuickBite
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -67,11 +67,14 @@ const NavBar = ({ setShowLogin }) => {
               className="p-2"
             />
             <div className="position-relative">
-              <FontAwesomeIcon
-                icon={faCartShopping}
-                size="lg"
-                className="p-2"
-              />
+              <Link to="/cart">
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  size="lg"
+                  className="p-2"
+                  style={{ color: "#030303" }}
+                />
+              </Link>
               <div
                 className="text-center fs-6 position-absolute mx-2 my-1 top-0 start-50 translate-middle bg-danger text-white rounded-circle"
                 style={{ width: "10px", height: "10px", lineHeight: "20px" }}
