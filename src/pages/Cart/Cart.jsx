@@ -3,7 +3,8 @@ import "./Cart.css";
 import React, { useContext } from "react";
 
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart } = useContext(StoreContext);
+  const { cartItems, food_list, removeFromCart, getTotalCartAmount } =
+    useContext(StoreContext);
   return (
     <>
       <table className="table mb-5 table-responsive">
@@ -52,15 +53,17 @@ const Cart = () => {
               <h5 className="card-title fw-bold">Cart Totals</h5>
               <div className="d-flex border-bottom">
                 <p className="card-text ">Subtotals</p>
-                <p style={{ paddingLeft: "6%" }}>$20</p>
+                <p style={{ paddingLeft: "6%" }}> ${getTotalCartAmount()}</p>
               </div>
               <div className="d-flex border-bottom">
                 <p className="card-text">Delivery Fee</p>
-                <p style={{ paddingLeft: "2%" }}>$20</p>
+                <p style={{ paddingLeft: "2%" }}>${5}</p>
               </div>
               <div className="d-flex  border-bottom">
                 <p className="card-text fw-bold">Total</p>
-                <p style={{ paddingLeft: "10%" }}>$20</p>
+                <p style={{ paddingLeft: "10%" }}>
+                  ${getTotalCartAmount() + 5}
+                </p>
               </div>
               <a href="#" className="btn btn-danger my-2 btn-total">
                 PROCEED TO CHECKOUT
