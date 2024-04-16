@@ -73,7 +73,7 @@ const NavBar = ({ setShowLogin }) => {
                 <FontAwesomeIcon
                   icon={faCartShopping}
                   size="lg"
-                  className="p-3"
+                  className="p-2"
                   style={{ color: "#030303" }}
                 />
               </Link>
