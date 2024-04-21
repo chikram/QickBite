@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
   faCartShopping,
@@ -8,10 +8,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StoreContext } from "../../context/StoreContext";
+import { assets } from "../../assets/assets";
 
 const NavBar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
-  const { getTotalCartAmount } = useContext(StoreContext);
+  const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light  fixed-top">
       <div className="container-fluid">
@@ -72,8 +82,8 @@ const NavBar = ({ setShowLogin }) => {
               <Link to="/cart">
                 <FontAwesomeIcon
                   icon={faCartShopping}
-                  size="lg"
-                  className="p-2"
+                  size="xl"
+                  className="pt-2 px-4"
                   style={{ color: "#030303" }}
                 />
               </Link>
@@ -86,12 +96,29 @@ const NavBar = ({ setShowLogin }) => {
                 style={{ width: "10px", height: "10px", lineHeight: "20px" }}
               ></div>
             </div>
-            <button
-              className="btn border border-success mx-3 rounded-pill"
-              onClick={() => setShowLogin(true)}
-            >
-              Login
-            </button>
+            {!token ? (
+              <button
+                className="btn border border-success mx-3 rounded-pill"
+                onClick={() => setShowLogin(true)}
+              >
+                Login
+              </button>
+            ) : (
+              <div className="navbar-profile">
+                <img src={assets.profile_icon} alt="profile" width={25} />
+                <ul className="nav-profile-dropdown">
+                  <li>
+                    <img src={assets.bag_icon} alt="bag" />
+                    <p className="m-0 fw-bold">Order</p>
+                  </li>
+                  <hr />
+                  <li onClick={logout}>
+                    <img src={assets.logout_icon} alt="logout" />
+                    <p className="m-0 fw-bold">logout</p>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>
