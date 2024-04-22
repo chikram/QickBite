@@ -4,7 +4,8 @@ import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
 const Fooditem = ({ id, name, price, description, image }) => {
-  const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+  const { cartItems, addToCart, removeFromCart, url } =
+    useContext(StoreContext);
   return (
     <div
       className="card cd"
@@ -15,7 +16,11 @@ const Fooditem = ({ id, name, price, description, image }) => {
         position: "relative",
       }}
     >
-      <img src={image} className="card-img-top h-50 image-fluide" alt="..." />
+      <img
+        src={url + "/images/" + image}
+        className="card-img-top h-50 image-fluide"
+        alt="..."
+      />
       {!cartItems[id] ? (
         <img
           width={35}
